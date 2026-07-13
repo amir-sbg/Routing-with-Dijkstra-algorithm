@@ -4,7 +4,7 @@
 
 ![Traffic-aware graph routing](docs/routing-hero.png)
 
-> The image is generated concept art for the documentation. The executable project renders its graph and selected route with Matplotlib.
+> The image is a generated scientific visualization of the project's routing model. Its edge labels are illustrative; the executable project renders the actual input graph and selected route with Matplotlib.
 
 This project models a customizable map as a weighted, bidirectional graph. Given a start node, destination node, and request time, it calculates a route with Dijkstra's algorithm, increases the cost of congested links, records the selected route's time window, and visualizes the result.
 
