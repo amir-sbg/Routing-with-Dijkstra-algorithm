@@ -1,4 +1,4 @@
-# Routing with Dijkstra's Algorithm
+# Traffic-Aware Dijkstra Routing
 
 > An explainable Python route-planning prototype that combines shortest-path search with time-aware traffic costs.
 
