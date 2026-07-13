@@ -8,17 +8,13 @@
 
 This project models a customizable map as a weighted, bidirectional graph. Given a start node, destination node, and request time, it calculates a route with Dijkstra's algorithm, increases the cost of congested links, records the selected route's time window, and visualizes the result.
 
-It is a compact algorithmic-AI project: the routing intelligence is deterministic, inspectable, and based on graph optimization rather than a trained machine-learning model.
-
-## Why this project matters
-
-Routing systems are a useful example of applied AI because they must make good decisions under constraints. This prototype demonstrates the foundations of that problem:
+The project is designed as a transparent graph-optimization exercise. Its core design goals are:
 
 - represent a map as a reusable graph of coordinates and connections;
 - evaluate route quality with a non-negative cost function;
 - choose the lowest-cost path with Dijkstra's algorithm;
 - account for changing traffic conditions over time; and
-- expose the decision visually so a route can be inspected and debugged.
+- expose the selected route visually so the result can be inspected and debugged.
 
 ## Features
 
@@ -172,7 +168,3 @@ python -m py_compile DijkstraHandler.py Main.py MapManager.py MapMonitor.py MinH
 ```
 
 Then use the example input above to verify graph loading, route reconstruction, traffic bookkeeping, and visualization.
-
-## License
-
-No license file is currently included in the repository. Add an explicit license before redistributing the project.
